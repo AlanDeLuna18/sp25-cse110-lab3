@@ -3,7 +3,7 @@
   <head>
     <title>Alan's Software Development Meeting Minutes</title>
     <meta charset="UTF-8">
-    <meta name = "description">
+    <meta name = "description" content = "Meeting Notes" property = "">
     <link rel="icon" type="png" href="favicon.png"/> 
   </head> 
 
@@ -49,42 +49,36 @@
 
         <fieldset>
           <form>
-            <label for = "firstName">Full Name:</label>
+            <h4>Full Name:</h4>
             <input type = "text" placeholder="firstName">
           </form>
-
-          <form>
-            <label for = "lastName">Last Name:</label>
-            <input type = "text" placeholder="lastName">
-          </form>
-
           
-          <p>Pick the current team you are a part of: </p>
+          <h4>Pick the current team you are a part of: </h4>
           <div>
-            <label for = "currentTeam">Front End:</label>
+            <p>Front End:</p>
             <input type = "checkbox">
           </div>
 
           <div>
-            <label for = "currentTeam">Back End:</label>
+            <p>Back End:</p>
             <input type = "checkbox">
           </div>
 
           <div>
-            <label for = "currentTeam">Databases:</label>
+            <p>Databases:</p>
             <input type = "checkbox">
           </div>
 
 
 
 
-          <label for = "test">Describe how you will do better in the future:</label>
+          <h4>Describe how you will do better in the future:</h4>
           <textarea id = "test">
           </textarea>
           <br>
 
 
-          <label for = "project">Choose an option to work on the project and improve:</label>
+          <h4>Choose an option to work on the project and improve:</h4>
           <input list = "projectOptions">
           <datalist id = "projectOptions">
             <option value = "front-end"></option>
@@ -120,7 +114,7 @@
 
 
           <label for = "date">Today's date:</label>
-          <input type="date" id="date" min="2000-1-1" max="2025-4-15"/>
+          <input type="date" id="date" min="2000-01-01" max="2025-04-15"/>
 
           <br>
           <button type="button">Send</button>
