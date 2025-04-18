@@ -3,7 +3,7 @@ name: 'Adding CSS To Lab 2 '
 about: Implement Various CSS Features into Lab 2
 title: ''
 labels: ''
-assignees: ''
+assignees: 'Alan De Luna'
 
 ---
 
