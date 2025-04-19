@@ -1,0 +1,47 @@
+:root
+{
+    --paper-color: #e8e6be; 
+    --text-color: #3968bf; 
+    --green-border: rgb(61,191,107); 
+    --orange-border: orange; 
+    --brown-border: hsl(360, 92, 41); 
+    --red-line: color(from hsl(360, 92, 41) srgb r g b);
+    --blue-line: color(from #3968bf srgb r g b);
+}
+
+
+
+/**/ 
+body
+{
+    background-color: var(--paper-color, yellow); /*Good example of a variable with a fallback*/
+} 
+
+
+
+/*Change the headings in the website*/
+
+.website-headings
+{
+    color: var(--text-color); 
+    font-family: 'Courier New';
+    border-style: solid;
+    border-color: purple;
+    border-radius: 20px;
+}
+
+#send-button
+{
+    border-radius: 25cm;
+    border-color: var(--orange-border);
+    border-width: 0.05in;
+    border-top: 5em;
+}
+
+#date
+{
+    border-width: 1vh;
+    border-color: var(--orange-border);
+    border-top: 5vw;
+    border-radius: 25cm;
+}
