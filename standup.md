@@ -19,3 +19,7 @@
 | Alan De Luna | Very good! | Looking forward for the weekend! | Work on Lab 1 and Lab 2 | Finished Labs 1 and 2, working on Lab 3 | Add CSS to my HTML code from Lab 2, finish Lab 3 | 
 
 
+#### What to Consider in the Future
+
+- Finishing Lab 4
+- Using the knowledge gained from this lab and use it to write the CSS for the group project!
