@@ -7,27 +7,28 @@
     --brown-border: hsl(360, 92, 41); 
     --red-line: color(from hsl(360, 92, 41) srgb r g b);
     --blue-line: color(from #3968bf srgb r g b);
+    --hover-button: gray;
 }
 
 
 
-/**/ 
+/*Change the color of the page!*/ 
 body
 {
     background-color: var(--paper-color, yellow); /*Good example of a variable with a fallback*/
 } 
 
-
-
 /*Change the headings in the website*/
-
 .website-headings
 {
     color: var(--text-color); 
+    text-decoration: underline;
+    text-align: center;
     font-family: 'Courier New';
     border-style: solid;
     border-color: purple;
     border-radius: 20px;
+    display: none;
 }
 
 #send-button
@@ -36,6 +37,7 @@ body
     border-color: var(--orange-border);
     border-width: 0.05in;
     border-top: 5em;
+    display: block;
 }
 
 #date
@@ -45,3 +47,52 @@ body
     border-top: 5vw;
     border-radius: 25cm;
 }
+
+*
+{
+    border-radius: 1cm;
+}
+
+#back-end
+{
+    /*long hand notation for margins*/
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    margin-left: 50px; 
+    margin-right: 50px;
+    display: inline; 
+}
+
+#databases
+{
+    /*short hand notation for margins*/
+    margin: 50px 50px 50px 50px;
+    display: inline; 
+}
+
+#front-end
+{
+    margin: auto;
+    display: inline; 
+}
+
+#better
+{
+    /*Makes it completely surrounding by empty space!*/
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+    height: 60px; 
+    width: 100px;
+    max-width: 100px;
+    max-height: 60px;
+}
+
+#future-plans
+{
+    /*short hand notation for padding*/
+    padding: 25px 25px 25px 25px;
+}
+
