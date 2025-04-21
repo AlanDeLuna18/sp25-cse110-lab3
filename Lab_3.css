@@ -4,8 +4,8 @@
     --text-color: #3968bf; 
     --green-border: rgb(61,191,107); 
     --orange-border: orange; 
-    --brown-border: hsl(360, 92, 41); 
-    --red-line: color(from hsl(360, 92, 41) srgb r g b);
+    --brown-border: hsl(360deg, 92%, 41%); 
+    --red-line: color(from hsl(360deg, 92%, 41%) srgb r g b);
     --blue-line: color(from #3968bf srgb r g b);
     --hover-button: gray;
 }
@@ -63,7 +63,7 @@ body
 
 #send-button:active
 {
-    box-shadow: black;
+    box-shadow: 10px 5px 5px black;
 }
 
 @media only screen and (max-width: 600px) 
@@ -90,7 +90,7 @@ body
 
 div p 
 {
-    color: var(--blue-line);
+    color: blue;
 }
 
 div > h1
