@@ -6,6 +6,12 @@
     <meta name = "description" content = "Meeting Notes" property = "">
     <link rel="icon" type="image/png" href="favicon.png"/> 
     <link rel="stylesheet" href="Lab_3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Slabo+13px&family=Special+Gothic+Condensed+One&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+    <style>h1{font-family: "Playwrite AU SA";}</style>
   </head> 
 
   
@@ -13,11 +19,11 @@
 
     <nav>
       <ul>
-        <li><a href="otherpage.html">Other Meetings</a></li>
+        <li><a href="otherpage.html" id="heading">Other Meetings</a></li>
       </ul>
     </nav>
 
-    <header> Alan's Software Engineering Company is claimed and copyrighted by Alan De Luna from UCSD</header>
+    <header id="heading" style="font-family: Slabo;"> Alan's Software Engineering Company is claimed and copyrighted by Alan De Luna from UCSD</header>
     <hr>
 
     <details>
@@ -32,32 +38,40 @@
         <h2>This webpage is designed to keep track of all meetings starting from </h2>
         <h3>April 15th, 2025</h3>
     </div>
-        <section>
-          Overall this meeting went very wrong in <em>every</em> sense of the word. Here were the main talking points: 
-          <ul>
-              <li>Entire repository has been deleted, no clue who did it or why</li>
-              <li>Evidence of the project has been eliminated entirely</li>
-          </ul>
+        <section class="final-notes">
+          <div id="overall">
+            Overall this meeting went very wrong in <em>every</em> sense of the word. Here were the main talking points: 
+            <ul>
+                <li>Entire repository has been deleted, no clue who did it or why</li>
+                <li>Evidence of the project has been eliminated entirely</li>
+            </ul>
+          </div>
 
-          Here are the steps we plan on taking to combat this:
-          <ol>
-              <li>Remake the repository (<strong>this needs to be done ASAP</strong>), refer to this <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories">Github page</a> if you need to review</li>
-              <li>Start <i>again</i> from scratch</li>
-          </ol>
+          <div id="here-are">
+            Here are the steps we plan on taking to combat this:
+            <ol>
+                <li>Remake the repository (<strong>this needs to be done ASAP</strong>), refer to this <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories">Github page</a> if you need to review</li>
+                <li>Start <i>again</i> from scratch</li>
+            </ol>
+          </div>
+
+          <div id="dissapointed">
+            <br>
+            <br>
+            <h4 style="color:red;">Final Thoughts: </h4>
+            <p>Overall I'm <b>very</b> dissapointed. I <span class = "italic">thought </span> you guys were better than this but this is very lackluster. Do better please. Fill out the form by tomorrow afternoon so that I know who is still interested in this project</p>
+          </div>
         </section>
 
 
-        <br>
-        <br>
-        <h4 style="color:red;">Final Thoughts: </h4>
-        <p>Overall I'm <b>very</b> dissapointed. I <span class = "italic">thought </span> you guys were better than this but this is very lackluster. Do better please. Fill out the form by tomorrow afternoon so that I know who is still interested in this project</p>
-
-        <fieldset>
-          <form>
-            <h4>Full Name:</h4>
+       
+        <fieldset id="nested-outer">
+          <form id="nested-inner">
+            <h4 class="multiple-selectors">Full Name:</h4>
             <input type = "text" placeholder="firstName">
           </form>
           
+
           <h4>Pick the current team you are a part of: </h4>
           <div>
             <p id = "front-end">Front End:</p>
@@ -93,7 +107,8 @@
 
           <br>
 
-
+        
+          
           <p id="future-plans">Are you planning on leaving this job soon?:</p>
           <div>
             <input type="radio">
@@ -118,24 +133,25 @@
 
 
 
-          <label for = "date">Today's date:</label>
-          <input type="date" id="date" min="2000-01-01" max="2025-04-15"/>
+            <label for = "date">Today's date:</label>
+            <input type="date" id="date" min="2000-01-01" max="2025-04-15"/>
 
-          <br>
-          <button type="button" id="send-button">Send</button>
+            <br>
+            <button type="button" id="send-button">Send</button>
+        
 
 
         </fieldset>
 
 
-    <audio controls src="CSE110AudioFile.m4a"></audio>
-    <img src="happyEmoji.png" alt = "happy emoji"/>
-
-
-    <video controls width = "250">
-      <source src = "IMG_8715.MOV">
-    </video>
-    </main>
+    <div class="flexbox-example">
+      <audio controls src="CSE110AudioFile.m4a"></audio>
+      <img src="happyEmoji.png" alt = "happy emoji" width="300" height="200"/>
+      <video controls width = "250">
+        <source src = "IMG_8715.MOV">
+      </video>
+      </main>
+    </div>
 
     <hr>
     <footer>All rights reserved by Alan De Luna from UCSD</footer>

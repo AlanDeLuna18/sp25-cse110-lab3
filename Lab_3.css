@@ -18,18 +18,31 @@ body
     background-color: var(--paper-color, yellow); /*Good example of a variable with a fallback*/
 } 
 
+
+
+.heading
+{
+    position: fixed;
+}
 /*Change the headings in the website*/
 .website-headings
 {
     color: var(--text-color); 
     text-decoration: underline;
-    text-align: center;
     font-family: 'Courier New';
     border-style: solid;
     border-color: purple;
     border-radius: 20px;
-    display: none;
+    display: grid;
+    grid-template-columns: 40px 50px auto 50px 40px ;
+    grid-template-rows: 25% 100px auto;
+    grid-template-rows: 25% 25%;
+    position: static;
 }
+
+
+
+
 
 #send-button
 {
@@ -38,7 +51,34 @@ body
     border-width: 0.05in;
     border-top: 5em;
     display: block;
+    position: relative;
+    top: 5px;
+    left: 500px;
 }
+
+#send-button:hover
+{
+    background-color: var(--hover-button);
+}
+
+#send-button:active
+{
+    box-shadow: black;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    body
+    {
+        background-color: var(--paper-color, yellow); 
+    }
+}
+
+#date, #send-button
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 #date
 {
@@ -47,6 +87,48 @@ body
     border-top: 5vw;
     border-radius: 25cm;
 }
+
+div p 
+{
+    color: var(--blue-line);
+}
+
+div > h1
+{
+    color: var(--green-border);
+}
+
+
+div ~ p
+{
+    background-color: pink;
+}
+
+form + h4
+{
+    background-color: aquamarine;
+}
+
+h4.multiple-selectors
+{
+    background-color: red;
+}
+
+fieldset:has(+div)
+{
+    background-color: rgb(139, 139, 235);
+}
+
+
+ul
+{
+    li
+    {
+        color: coral;
+
+    }
+}
+
 
 *
 {
@@ -63,6 +145,9 @@ body
     display: inline; 
 }
 
+
+
+
 #databases
 {
     /*short hand notation for margins*/
@@ -75,6 +160,17 @@ body
     margin: auto;
     display: inline; 
 }
+
+
+/*Implementing a flex box*/
+.flexbox-example
+{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
 
 #better
 {
